@@ -1,0 +1,1 @@
+这是一款xcode4的插件，支持删除一行（类似eclipse的删除一行）。安装并重启eclipse会在xcode的edit菜单中多出一个子菜单删除一行。同时此插件也支持快捷键cmd+d
