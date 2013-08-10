@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		033F1C6017AE3729006AE806 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033F1C5F17AE3729006AE806 /* Cocoa.framework */; };
+		033F1C6A17AE3729006AE806 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 033F1C6817AE3729006AE806 /* InfoPlist.strings */; };
+		033F1C7317AE389E006AE806 /* Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 033F1C7217AE389E006AE806 /* Plugin.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		033F1C5C17AE3729006AE806 /* CustomPlugin.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CustomPlugin.xcplugin; path = WeiyunPlugin.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		033F1C5F17AE3729006AE806 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		033F1C6217AE3729006AE806 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		033F1C6317AE3729006AE806 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		033F1C6417AE3729006AE806 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		033F1C6717AE3729006AE806 /* CustomPlugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomPlugin-Info.plist"; sourceTree = "<group>"; };
+		033F1C6917AE3729006AE806 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		033F1C6B17AE3729006AE806 /* CustomPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomPlugin-Prefix.pch"; sourceTree = "<group>"; };
+		033F1C7117AE389E006AE806 /* Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plugin.h; sourceTree = "<group>"; };
+		033F1C7217AE389E006AE806 /* Plugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plugin.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		033F1C5917AE3729006AE806 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033F1C6017AE3729006AE806 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		033F1C5317AE3729006AE806 = {
+			isa = PBXGroup;
+			children = (
+				033F1C6517AE3729006AE806 /* CustomPlugin */,
+				033F1C5E17AE3729006AE806 /* Frameworks */,
+				033F1C5D17AE3729006AE806 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		033F1C5D17AE3729006AE806 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				033F1C5C17AE3729006AE806 /* CustomPlugin.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		033F1C5E17AE3729006AE806 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				033F1C5F17AE3729006AE806 /* Cocoa.framework */,
+				033F1C6117AE3729006AE806 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		033F1C6117AE3729006AE806 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				033F1C6217AE3729006AE806 /* AppKit.framework */,
+				033F1C6317AE3729006AE806 /* CoreData.framework */,
+				033F1C6417AE3729006AE806 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		033F1C6517AE3729006AE806 /* CustomPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				033F1C6617AE3729006AE806 /* Supporting Files */,
+				033F1C7117AE389E006AE806 /* Plugin.h */,
+				033F1C7217AE389E006AE806 /* Plugin.m */,
+			);
+			path = CustomPlugin;
+			sourceTree = "<group>";
+		};
+		033F1C6617AE3729006AE806 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				033F1C6717AE3729006AE806 /* CustomPlugin-Info.plist */,
+				033F1C6817AE3729006AE806 /* InfoPlist.strings */,
+				033F1C6B17AE3729006AE806 /* CustomPlugin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		033F1C5B17AE3729006AE806 /* MMDeleteLinePlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 033F1C6E17AE3729006AE806 /* Build configuration list for PBXNativeTarget "MMDeleteLinePlugin" */;
+			buildPhases = (
+				033F1C5817AE3729006AE806 /* Sources */,
+				033F1C5917AE3729006AE806 /* Frameworks */,
+				033F1C5A17AE3729006AE806 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMDeleteLinePlugin;
+			productName = CustomPlugin;
+			productReference = 033F1C5C17AE3729006AE806 /* CustomPlugin.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		033F1C5417AE3729006AE806 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = maizhelun;
+			};
+			buildConfigurationList = 033F1C5717AE3729006AE806 /* Build configuration list for PBXProject "CustomPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 033F1C5317AE3729006AE806;
+			productRefGroup = 033F1C5D17AE3729006AE806 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				033F1C5B17AE3729006AE806 /* MMDeleteLinePlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		033F1C5A17AE3729006AE806 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033F1C6A17AE3729006AE806 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		033F1C5817AE3729006AE806 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033F1C7317AE389E006AE806 /* Plugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		033F1C6817AE3729006AE806 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				033F1C6917AE3729006AE806 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		033F1C6C17AE3729006AE806 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		033F1C6D17AE3729006AE806 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		033F1C6F17AE3729006AE806 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "${HOME}";
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomPlugin/CustomPlugin-Prefix.pch";
+				INFOPLIST_FILE = "CustomPlugin/CustomPlugin-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		033F1C7017AE3729006AE806 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "${HOME}";
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomPlugin/CustomPlugin-Prefix.pch";
+				INFOPLIST_FILE = "CustomPlugin/CustomPlugin-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		033F1C5717AE3729006AE806 /* Build configuration list for PBXProject "CustomPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033F1C6C17AE3729006AE806 /* Debug */,
+				033F1C6D17AE3729006AE806 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		033F1C6E17AE3729006AE806 /* Build configuration list for PBXNativeTarget "MMDeleteLinePlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033F1C6F17AE3729006AE806 /* Debug */,
+				033F1C7017AE3729006AE806 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 033F1C5417AE3729006AE806 /* Project object */;
+}
