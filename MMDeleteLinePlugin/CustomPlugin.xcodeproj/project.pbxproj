@@ -13,7 +13,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		033F1C5C17AE3729006AE806 /* CustomPlugin.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CustomPlugin.xcplugin; path = WeiyunPlugin.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		033F1C5C17AE3729006AE806 /* MMDeleteLinePlugin.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMDeleteLinePlugin.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		033F1C5F17AE3729006AE806 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		033F1C6217AE3729006AE806 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		033F1C6317AE3729006AE806 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -49,7 +49,7 @@
 		033F1C5D17AE3729006AE806 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				033F1C5C17AE3729006AE806 /* CustomPlugin.xcplugin */,
+				033F1C5C17AE3729006AE806 /* MMDeleteLinePlugin.xcplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,7 +110,7 @@
 			);
 			name = MMDeleteLinePlugin;
 			productName = CustomPlugin;
-			productReference = 033F1C5C17AE3729006AE806 /* CustomPlugin.xcplugin */;
+			productReference = 033F1C5C17AE3729006AE806 /* MMDeleteLinePlugin.xcplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -233,10 +233,11 @@
 		033F1C6F17AE3729006AE806 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "${HOME}";
-				GCC_ENABLE_OBJC_GC = supported;
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomPlugin/CustomPlugin-Prefix.pch";
@@ -250,10 +251,11 @@
 		033F1C7017AE3729006AE806 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "${HOME}";
-				GCC_ENABLE_OBJC_GC = supported;
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomPlugin/CustomPlugin-Prefix.pch";

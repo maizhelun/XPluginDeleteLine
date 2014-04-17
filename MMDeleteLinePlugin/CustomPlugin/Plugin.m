@@ -9,7 +9,7 @@
 #import "Plugin.h"
 
 @interface Plugin()
-@property (nonatomic, retain) NSTextView *textView;
+@property (nonatomic, strong) NSTextView *textView;
 @end
 
 @implementation Plugin
@@ -53,7 +53,6 @@
             [newMenuItem setTarget:self];
             [newMenuItem setKeyEquivalentModifierMask:NSAlternateKeyMask];
             [[editMenuItem submenu] addItem:newMenuItem];
-            [newMenuItem release];
             
             [newMenuItem setKeyEquivalentModifierMask:NSCommandKeyMask];
             [newMenuItem setKeyEquivalent:@"d"];
